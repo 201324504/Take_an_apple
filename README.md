@@ -8,3 +8,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 - 프로젝트 소개
 ‘사과 가져가기 - Take an Apple'이라는 게임입니다. 술자리에서 했던 ’베스킨라빈스31‘이라는 게임의 역발상으로, 흔히 운동장에서 많이 했던 ’모래 가져가기’와 비슷한 게임입니다. 이번 프로젝트는 C language로 작성되며, Windows가 아닌 Linux 환경에서 구현을 할 것이므로 컴파일을 위한 Makefile 작성도 병행될 것입니다. "./Takeanapple" 명령어로 실행합니다.
+
+- Github Page 주소
+
