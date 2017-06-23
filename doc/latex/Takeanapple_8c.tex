@@ -1,0 +1,209 @@
+\hypertarget{Takeanapple_8c}{\section{Takeanapple.\-c File Reference}
+\label{Takeanapple_8c}\index{Takeanapple.\-c@{Takeanapple.\-c}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$time.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{Takeanapple_8c_aa6ee1a8b97b0f0538e668df592ae147e}{\#define {\bfseries H\-U\-M\-A\-N}~0}\label{Takeanapple_8c_aa6ee1a8b97b0f0538e668df592ae147e}
+
+\item 
+\hypertarget{Takeanapple_8c_a546b26edcaf4b57d489b3d1cc18841a9}{\#define {\bfseries C\-O\-M\-P\-U\-T\-E\-R}~1}\label{Takeanapple_8c_a546b26edcaf4b57d489b3d1cc18841a9}
+
+\item 
+\hypertarget{Takeanapple_8c_ac35882f8ea7385a180e233fa0c516ced}{\#define {\bfseries G\-I\-V\-E\-U\-P}~-\/1}\label{Takeanapple_8c_ac35882f8ea7385a180e233fa0c516ced}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{Takeanapple_8c_af14dbb33765e33c0acf67f17d9e3249b}{x} (int n, int p)
+\item 
+int \hyperlink{Takeanapple_8c_adfdb9e83a13ce2c7782df5a4181deb1f}{win} (int n, int p)
+\begin{DoxyCompactList}\small\item\em return the result of the game \end{DoxyCompactList}\item 
+int \hyperlink{Takeanapple_8c_a9ccce4ceb7d47c98692f239b5553db32}{best\-\_\-choice} (int n, int p)
+\begin{DoxyCompactList}\small\item\em the function carry out the best way to win if there are no best way return 0 \end{DoxyCompactList}\item 
+int \hyperlink{Takeanapple_8c_ac50ac3adb7ce13ccf14a8528e1fb5b62}{random\-\_\-choice} (int n, int \hyperlink{Takeanapple_8c_af14dbb33765e33c0acf67f17d9e3249b}{x})
+\begin{DoxyCompactList}\small\item\em select random number for restrict the number of apple at first turn \end{DoxyCompactList}\item 
+int \hyperlink{Takeanapple_8c_a43c91fe0bd172015eb0b3bb1f9f88ca2}{computer\-\_\-choice} (int n, int p)
+\begin{DoxyCompactList}\small\item\em the function make computer can carry out a way to win \end{DoxyCompactList}\item 
+int \hyperlink{Takeanapple_8c_a0960b79ea3f3be2e7e41e0b66474d4ff}{human\-\_\-choice} (int n, int p)
+\begin{DoxyCompactList}\small\item\em the function that user take the apple \end{DoxyCompactList}\item 
+int \hyperlink{Takeanapple_8c_a80bd4e07788b9ece122199e7dc0d51e6}{get\-\_\-num} (void)
+\begin{DoxyCompactList}\small\item\em input the number of the apples before starting a game. if the number is not between 10 to 50 then try again \end{DoxyCompactList}\item 
+int \hyperlink{Takeanapple_8c_adc6a2d5265a633f7390aabdc01c5973c}{get\-\_\-turn} (void)
+\begin{DoxyCompactList}\small\item\em if the value of turn is 0 then user start first. if turn is 1, computer will start \end{DoxyCompactList}\item 
+int \hyperlink{Takeanapple_8c_af7b3f94ce1ecd39ab5ed6092277e051a}{is\-\_\-over} (int n, int p)
+\begin{DoxyCompactList}\small\item\em the function control the number of apples can be taken \end{DoxyCompactList}\item 
+\hypertarget{Takeanapple_8c_a840291bc02cba5474a4cb46a9b9566fe}{int \hyperlink{Takeanapple_8c_a840291bc02cba5474a4cb46a9b9566fe}{main} (void)}\label{Takeanapple_8c_a840291bc02cba5474a4cb46a9b9566fe}
+
+\begin{DoxyCompactList}\small\item\em control the whole game \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{Takeanapple_8c_a9ccce4ceb7d47c98692f239b5553db32}{\index{Takeanapple.\-c@{Takeanapple.\-c}!best\-\_\-choice@{best\-\_\-choice}}
+\index{best\-\_\-choice@{best\-\_\-choice}!Takeanapple.c@{Takeanapple.\-c}}
+\subsubsection[{best\-\_\-choice}]{\setlength{\rightskip}{0pt plus 5cm}int best\-\_\-choice (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{int}]{p}
+\end{DoxyParamCaption}
+)}}\label{Takeanapple_8c_a9ccce4ceb7d47c98692f239b5553db32}
+
+
+the function carry out the best way to win if there are no best way return 0 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int,int} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{Takeanapple_8c_a43c91fe0bd172015eb0b3bb1f9f88ca2}{\index{Takeanapple.\-c@{Takeanapple.\-c}!computer\-\_\-choice@{computer\-\_\-choice}}
+\index{computer\-\_\-choice@{computer\-\_\-choice}!Takeanapple.c@{Takeanapple.\-c}}
+\subsubsection[{computer\-\_\-choice}]{\setlength{\rightskip}{0pt plus 5cm}int computer\-\_\-choice (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{int}]{p}
+\end{DoxyParamCaption}
+)}}\label{Takeanapple_8c_a43c91fe0bd172015eb0b3bb1f9f88ca2}
+
+
+the function make computer can carry out a way to win 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int,int} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{Takeanapple_8c_a80bd4e07788b9ece122199e7dc0d51e6}{\index{Takeanapple.\-c@{Takeanapple.\-c}!get\-\_\-num@{get\-\_\-num}}
+\index{get\-\_\-num@{get\-\_\-num}!Takeanapple.c@{Takeanapple.\-c}}
+\subsubsection[{get\-\_\-num}]{\setlength{\rightskip}{0pt plus 5cm}int get\-\_\-num (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{Takeanapple_8c_a80bd4e07788b9ece122199e7dc0d51e6}
+
+
+input the number of the apples before starting a game. if the number is not between 10 to 50 then try again 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{Takeanapple_8c_adc6a2d5265a633f7390aabdc01c5973c}{\index{Takeanapple.\-c@{Takeanapple.\-c}!get\-\_\-turn@{get\-\_\-turn}}
+\index{get\-\_\-turn@{get\-\_\-turn}!Takeanapple.c@{Takeanapple.\-c}}
+\subsubsection[{get\-\_\-turn}]{\setlength{\rightskip}{0pt plus 5cm}int get\-\_\-turn (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{Takeanapple_8c_adc6a2d5265a633f7390aabdc01c5973c}
+
+
+if the value of turn is 0 then user start first. if turn is 1, computer will start 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{Takeanapple_8c_a0960b79ea3f3be2e7e41e0b66474d4ff}{\index{Takeanapple.\-c@{Takeanapple.\-c}!human\-\_\-choice@{human\-\_\-choice}}
+\index{human\-\_\-choice@{human\-\_\-choice}!Takeanapple.c@{Takeanapple.\-c}}
+\subsubsection[{human\-\_\-choice}]{\setlength{\rightskip}{0pt plus 5cm}int human\-\_\-choice (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{int}]{p}
+\end{DoxyParamCaption}
+)}}\label{Takeanapple_8c_a0960b79ea3f3be2e7e41e0b66474d4ff}
+
+
+the function that user take the apple 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int,int} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{Takeanapple_8c_af7b3f94ce1ecd39ab5ed6092277e051a}{\index{Takeanapple.\-c@{Takeanapple.\-c}!is\-\_\-over@{is\-\_\-over}}
+\index{is\-\_\-over@{is\-\_\-over}!Takeanapple.c@{Takeanapple.\-c}}
+\subsubsection[{is\-\_\-over}]{\setlength{\rightskip}{0pt plus 5cm}int is\-\_\-over (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{int}]{p}
+\end{DoxyParamCaption}
+)}}\label{Takeanapple_8c_af7b3f94ce1ecd39ab5ed6092277e051a}
+
+
+the function control the number of apples can be taken 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int,int} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{Takeanapple_8c_ac50ac3adb7ce13ccf14a8528e1fb5b62}{\index{Takeanapple.\-c@{Takeanapple.\-c}!random\-\_\-choice@{random\-\_\-choice}}
+\index{random\-\_\-choice@{random\-\_\-choice}!Takeanapple.c@{Takeanapple.\-c}}
+\subsubsection[{random\-\_\-choice}]{\setlength{\rightskip}{0pt plus 5cm}int random\-\_\-choice (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}}\label{Takeanapple_8c_ac50ac3adb7ce13ccf14a8528e1fb5b62}
+
+
+select random number for restrict the number of apple at first turn 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int,int} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{Takeanapple_8c_adfdb9e83a13ce2c7782df5a4181deb1f}{\index{Takeanapple.\-c@{Takeanapple.\-c}!win@{win}}
+\index{win@{win}!Takeanapple.c@{Takeanapple.\-c}}
+\subsubsection[{win}]{\setlength{\rightskip}{0pt plus 5cm}int win (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{int}]{p}
+\end{DoxyParamCaption}
+)}}\label{Takeanapple_8c_adfdb9e83a13ce2c7782df5a4181deb1f}
+
+
+return the result of the game 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int,int} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{Takeanapple_8c_af14dbb33765e33c0acf67f17d9e3249b}{\index{Takeanapple.\-c@{Takeanapple.\-c}!x@{x}}
+\index{x@{x}!Takeanapple.c@{Takeanapple.\-c}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}int x (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{int}]{p}
+\end{DoxyParamCaption}
+)}}\label{Takeanapple_8c_af14dbb33765e33c0acf67f17d9e3249b}
+return the number of apple which are not chosen now 
+\begin{DoxyParams}{Parameters}
+{\em int,int} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}

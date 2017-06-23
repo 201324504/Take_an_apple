@@ -5,13 +5,26 @@
 #define HUMAN 0
 #define COMPUTER 1
 #define GIVEUP -1
+/**
+	@file Takeanapple.c
+*/
 
-int x(int n,int p) // 현재 선택하지 못하는 사과의 개수 return 
+/**
+	@breif return the number of apple which are not chosen now
+	@param int , int
+	@return int
+*/
+
+int x(int n,int p)  
 {
 	return p!=0? (n+p)%3+1 : 0;
 }
 
-// 승부 결과를 계산하는 알고리즘을 이용하여 승부 결과를 진리값으로 return 
+/**
+	@brief return the result of the game
+	@param int, int
+	@return int
+*/ 
 int win(int n, int p) 
 {
 	int xv, cho;
@@ -22,7 +35,11 @@ int win(int n, int p)
 	return 0; // false
 }
 
-// 최선의 방법을 찾는 함수, 최선의 방법이 없을 시 0 return 
+/**
+	@brief the function carry out the best way to win if there are no best way return 0
+	@param int, int
+	@return int
+*/ 
 int best_choice(int n,int p) 
 {
 	int xv, cho;
@@ -35,7 +52,13 @@ int best_choice(int n,int p)
 	return 0;
 }
 
-// 처음 턴에 제한할 사과의 개수를 random함수로 구현 
+/**
+	@brief select random number for restrict the number of apple at first turn
+	@param int, int
+	@return int
+*/
+
+ 
 int random_choice(int n,int x)
 {
 	int cho;
@@ -47,8 +70,11 @@ int random_choice(int n,int x)
 	return cho;
 }
 
-/* 컴퓨터가 자신이 이길 수 있는 방법을 찾는 함수
-best_choice, computer choice로 구현 */
+/**
+	@brief the function make computer can carry out a way to win
+	@param int, int
+	@return int
+*/
 int computer_choice(int n, int p)
 {
 	int xv, cho;
@@ -62,7 +88,11 @@ int computer_choice(int n, int p)
 	return cho;	
 }
 
-// 사용자가 사과를 제거 
+/**
+	@brief the function that user take the apple
+	@param int , int
+	@return int
+*/ 
 int human_choice(int n, int p)
 {
 	int xv,cho;
@@ -79,8 +109,10 @@ int human_choice(int n, int p)
 	return cho;
 }
 
-/* 게임이 시작하기 전 사과의 개수를 입력, 10~50 사이의 수가 아닐 경우 
-다시 입력*/ 
+/**
+	@brief input the number of the apples before starting a game. if the number is not between 10 to 50 then try again
+	@return int
+*/
 int get_num(void)  
 {
 	int n=0;
@@ -94,8 +126,10 @@ int get_num(void)
 	return n;
 }
 
-/* 입력하는 turn이 0이면 사람, 1이면 computer가 게임을 먼저 시작한다.
-만약 0이나 1이 아니면 Turn을 다시 입력받는다. */ 
+/**
+	@brief if the value of turn is 0 then user start first. if turn is 1, computer will start
+	@return int
+*/ 
 int get_turn(void)
 {
 	int turn =-1;
@@ -108,7 +142,11 @@ int get_turn(void)
 	return turn;
 }
 
-// 가져갈 사과의 개수를 제어하는 함수 
+/**
+	@brief the function control the number of apples can be taken
+	@param int, int
+	@return int
+*/ 
 int is_over(int n, int p)
 {
 	int i=0;
@@ -119,7 +157,9 @@ int is_over(int n, int p)
 	return i>3;
 }
 
-/* 구현한 함수들을 이용하여 게임을 진행시킴 */
+/**
+	@brief control the whole game
+*/
 int main(void)
 {
 	int num,turn,cho =0, prev;	
